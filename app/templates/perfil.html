@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block icon %}<link rel="icon" href="/assets/img/imageIcone.ico">{% endblock %}
+
+{% block titulo %}CPR - Perfil{% endblock %}
+
+{% block cabecalho %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block conteudo %}
+    <h1>Doador</h1>
+    <p class="important">
+        Esse é seu perfil de doador, seja muito bem vindo !
+    </p>
+{% endblock %}
+{% block rodape %}
+    <h1>Doador</h1>
+    <p class="important">
+        Obrigado pela sua contribuição !
+    </p>
+{% endblock %}

@@ -1,8 +1,10 @@
 <?php
 
+/*
 echo '<pre>';
 var_dump($_POST);
 echo '</pre>';
+*/
 
 $nome = $_POST['name'];
 $razaosocial = $_POST['razaosocial'];
@@ -32,3 +34,5 @@ $statement->bindParam(':cidade', $cidade);
 $statement->bindParam(':telefone', $telefone);
 $statement->bindParam(':senha', $senha);
 $statement->execute();
+
+echo $template = $twig->render('painel.html', []);

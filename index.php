@@ -16,5 +16,5 @@ $arquivo = $arrUrl[1]  ??  'index';
 if (file_exists( __DIR__ . '\app\rotas\\' . $arquivo . '.php')) {
     include __DIR__ . '\app\rotas\\' . $arquivo . '.php';
 } else {
-    echo '404 Arquivo não encontrado!';
+    include __DIR__ . '\app\rotas\\404.php';
 }

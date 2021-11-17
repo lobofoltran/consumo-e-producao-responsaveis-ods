@@ -35,4 +35,4 @@ $statement->bindParam(':telefone', $telefone);
 $statement->bindParam(':senha', $senha);
 $statement->execute();
 
-echo $template = $twig->render('painel.html', []);
+echo $template = $twig->render('boas-vindas.html', []);

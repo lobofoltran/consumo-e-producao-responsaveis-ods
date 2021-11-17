@@ -1,0 +1,158 @@
+  .cover-container {
+    max-width: 55em;
+    
+  }
+  
+  .bg-dark{
+  background-size: cover;
+  }
+  
+  /*
+   * Header
+   */
+  
+  .nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+  }
+  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+  }
+  
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+  .btn-secondary {
+    color: #fff;
+  }
+  .btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+  }
+  
+  .nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  
+  
+  .mb-0 {
+    margin-bottom: 10px!important;
+  }
+  
+  #ods {
+    margin-top: 0.2em;
+  }
+  
+  .lead {
+    text-align: justify!important;
+  }
+  
+  .lead-mais {
+    text-align: center!important;
+  }
+  
+  .form-signin {
+    width: 100%;
+    max-width: 360px;
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-floating {
+    color: black;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  #botao {
+    margin-top: -0.2em;
+    margin-bottom: 0.7em;
+    max-width: 300px;
+  }
+  
+  .h3 {
+  color: #fff;
+  }
+  
+  .lembrarSenha {
+    color: #fff;
+  }
+  
+  .form-control, .form-select {
+    margin-top: 10px;
+  }
+  
+  #password {
+    border-radius: 0.25rem;
+  }
+  
+  .ahref {
+    color: white;
+  }
+  
+  .ahref:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .h1404 {
+    font-size: 10em;
+  }
+  
+  #return404 {
+    margin-top: 4em;
+  }
+  
+  #ods1 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #ods2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.9em;
+  }
+  
+  #alertaLogin {
+    margin-right: 15.5em;
+    margin-left: 15.5em;
+  }
+
+  #footer {
+      padding-top: 2.5em;
+      padding-bottom: 0.6em;
+  }

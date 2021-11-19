@@ -18,7 +18,7 @@
 <body>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Consumo e Produção Responsáveis</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/inicio">Consumo e Produção Responsáveis</a>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="/inicio">Sair</a>
@@ -91,35 +91,43 @@
                     </div>
                 </div>
                 <h5 class="h5 mb-3 fw-normal">Preencha o formulário:</h5>
-                <form action="/painel" method="post">
+                <form action="/alimento-sucesso" method="post">
                     <h6 class="h6 mb-2 fw-normal">Nome do alimento</h6>
-                    <input id="nome" type="text" class="form-control" name="nome_alim" placeholder="Nome do alimento"
+                    <input id="nome" type="text" class="form-control" name="nome" placeholder="Nome do alimento"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Categoria do alimento</h6>
-                    <input id="nome" type="text" class="form-control" name="cat_alm" placeholder="Categoria do alimento"
+                    <select id="categoria" class="form-select" name="categoria" placeholder="Categoria do alimento"
                         required>
+                        <option selected value="">Selecione</option>
+                        <option value="frutas-e-legumes">Frutas e Legumes</option>
+                        <option value="frios-e-laticinios">Frios e Laticínios</option>
+                        <option value="padaria-e-doces">Padaria e doces</option>
+                        <option value="congelados">Congelados</option>
+                        <option value="mercearia">Mercearia</option>
+                        <option value="outros">Outros</option>
+                    </select>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Marca alimento</h6>
-                    <input id="nome" type="text" class="form-control" name="marca_alim" placeholder="Marca alimento"
+                    <input id="marca" type="text" class="form-control" name="marca" placeholder="Marca alimento"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Fabricação</h6>
-                    <input id="nome" type="date" class="form-control" name="fab_alim" placeholder="Fabricação"
+                    <input id="fabricacao" type="date" class="form-control" name="fabricacao" placeholder="Fabricação"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Validade</h6>
-                    <input id="nome" type="date" class="form-control" name="val_alim" placeholder="Validade"
+                    <input id="validade" type="date" class="form-control" name="validade" placeholder="Validade"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
-                    <h6 class="h6 mb-2 fw-normal">Peso</h6>
-                    <input id="nome" type="number" class="form-control" name="peso_alim" placeholder="Peso"
+                    <h6 class="h6 mb-2 fw-normal">Peso (kg)</h6>
+                    <input id="peso" type="text" class="form-control" name="peso" placeholder="Peso"
                         required>
                     <h6 class="h6 mb-4 fw-normal"></h6>
                     <button id="" class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
                 </form>
                 <h6 class="h6 mb-4 fw-normal"></h6>
-                <h5 class="h5 mb-1 fw-normal">Importar XML:</h5>
+                <h5 class="h5 mb-1 fw-normal">Importar XML: (não funcional)</h5>
                 <h5 class="h6 mb-3 fw-normal">Insira uma planilha XML para importar em maior escala.</h5>
                 <form action="/painel" method="post">
                     <h6 class="h6 mb-2 fw-normal"></h6>
@@ -130,7 +138,6 @@
                     <button id="" class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
                     </form>
         </div>
-
         </main>
     </div>
     </div>

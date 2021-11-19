@@ -18,7 +18,7 @@
 <body>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Consumo e Produção Responsáveis</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/inicio">Consumo e Produção Responsáveis</a>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="/inicio">Sair</a>
@@ -89,31 +89,38 @@
                     </div>
                 </div>
                 <h5 class="h5 mb-3 fw-normal">Preencha o formulário:</h5>
-                <form action="/painel" method="post">
+                <form action="/ordem-sucesso" method="post">
                     <h6 class="h6 mb-2 fw-normal">Nome do alimento</h6>
-                    <select id="select" class="form-control" name="nome_alim" placeholder="Nome do alimento"
+                    <select id="select" class="form-control" name="nome" placeholder="Nome do alimento"
                         required>
                         <option selected value id="">Selecione</option>
-                        <option value="">Nome alimentos adicionados</option>
+                        <option value="{{nomeAlim}}">{{nomeAlim}}</option>
                         </option>
                     </select>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Quantidade total</h6>
-                    <input id="nome" type="number" class="form-control" name="qtd_doac" placeholder="Quantidade total"
+                    <input id="nome" type="number" class="form-control" name="qtde" placeholder="Quantidade total"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
-                    <h6 class="h6 mb-2 fw-normal">Peso total</h6>
-                    <input id="nome" type="number" class="form-control" name="peso_doac" placeholder="Peso total"
+                    <h6 class="h6 mb-2 fw-normal">Peso total (kg)</h6>
+                    <input id="nome" type="number" class="form-control" name="peso" placeholder="Peso total"
                         required>
                     <h6 class="h6 mb-2 fw-normal"></h6>
                     <h6 class="h6 mb-2 fw-normal">Agendar busca para</h6>
-                    <input id="nome" type="date" class="form-control" name="busca_doac" placeholder="Agendar busca para"
+                    <input id="nome" type="date" class="form-control" name="dataentrega" placeholder="Agendar busca para"
                         required>
+                    <h6 class="h6 mb-2 fw-normal"></h6>
+                    <h6 class="h6 mb-2 fw-normal">Organização</h6>
+                    <select id="categoria" class="form-select" name="categoria" placeholder="Categoria do alimento"
+                        required>
+                        <option selected value="">Selecione</option>
+                        <option value="{{nomeOng}}">{{nomeOng}}</option>
+                        <option value="qualquer">Qualquer</option>
+                    </select>
                     <h6 class="h6 mb-4 fw-normal"></h6>
                     <button id="" class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
                     </form>
         </div>
-
         </main>
     </div>
     </div>

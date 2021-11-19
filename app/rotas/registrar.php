@@ -1,11 +1,5 @@
 <?php
 
-/*
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
-*/
-
 $nome = $_POST['name'];
 $razaosocial = $_POST['razaosocial'];
 $cnpj = $_POST['cnpj'];

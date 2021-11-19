@@ -112,3 +112,16 @@ body {
     border-color: transparent;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
   }
+
+  #sucesso {
+    font-size: 5em;
+  }
+
+.ong {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#ongSub {
+  font-size: 1.3em;
+}

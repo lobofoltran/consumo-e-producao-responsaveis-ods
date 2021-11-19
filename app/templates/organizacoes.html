@@ -18,7 +18,7 @@
 <body>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Consumo e Produção Responsáveis</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/inicio">Consumo e Produção Responsáveis</a>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="/inicio">Sair</a>
@@ -82,27 +82,59 @@
             </nav>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Organizações</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
                         </div>
                     </div>
                 </div>
-                <h6 class="h5 mb-3 fw-normal">Abaixo você irá conferir todas as organizações carentes:</h6>
-                <h4>ONG Um Lugar ao Sol:</h4>
-                <h6>Necessita de: Qualquer</h4>
-                <h6>Cidade: Curitiba, Paraná</h4>
-                <h6>Site: <a href="https://www.umlugaraosol.ong.br/">https://www.umlugaraosol.ong.br/</a></h4>
-                <h6>Telefone: +55 41 98402-4464</h4>
-                    <img src="/assets/img/onglugaraosol.jpg">
+                <h6 class="h6 mb-0 fw-normal" id="ongSub">Abaixo você irá conferir todas as nossas organizações carentes:</h6>
+                <div class="pt-3 pb-2 mb-0 border-bottom"></div>
+                <div class="ong">
+                    <div class="pt-3 pb-2 mb-3 border-bottom">
+                        <h2>ONG Um Lugar ao Sol:</h2>
+                            <p><strong>Necessita de:</strong> Qualquer<br>
+                                <strong>Cidade:</strong> Curitiba, Paraná<br>
+                                <strong>Telefone:</strong> +55 41 98402-4464
+                            </p>
+                            <img src="/assets/img/onglugaraosol.jpg">
+                            <h6 class="h6 mb-2 fw-normal"></h6>
+                            <strong>Site:</strong> <a
+                                href="https://www.umlugaraosol.ong.br/">umlugaraosol.ong.br</a>
+                            <h6 class="h6 mb-2 fw-normal"></h6>
+                    </div>
                     <!-- Fazer função com for com todos os dados no PHP -->
-                <h4>{{nome}}:</h4>
-                <h6>Necessita de: {{necessita}}</h4>
-                <h6>Cidade: {{cidade}}, {{uf}}</h4>
-                <h6>Site: {{site}}</h4>
-                <h6>Telefone: {{telefone}}</h4>
-                    {{img}}
+                    <div class="ong">
+                        <div class="pt-3 pb-2 mb-3 border-bottom">
+                            <h2>ONG Nação Brasil:</h2>
+                                <p><strong>Necessita de:</strong> Qualquer<br>
+                                    <strong>Cidade:</strong> Curitiba, Paraná<br>
+                                    <strong>Telefone:</strong> +55 41 3024-5819
+                                </p>
+                                <img src="/assets/img/ongnacaobrasil.jpg">
+                                <h6 class="h6 mb-2 fw-normal"></h6>
+                                <strong>Site:</strong> <a
+                                    href="http://www.ongnacaobrasil.com.br/">ongnacaobrasil.com.br</a>
+                                <h6 class="h6 mb-2 fw-normal"></h6>
+                        </div>
+                    <div class="pt-3 pb-2 mb-3 border-bottom">
+                        <h2>ONG COMSOL:</h2>
+                            <p><strong>Necessita de:</strong> Qualquer<br>
+                                <strong>Cidade:</strong> Curitiba, Paraná<br>
+                                <strong>Telefone:</strong> +55 41 3698-0214
+                            </p>
+                            <img src="/assets/img/ongcomsol.jpg" width="720px">
+                            <h6 class="h6 mb-2 fw-normal"></h6>
+                            <strong>Site:</strong> <a
+                                href="http://www.comsol.org.br/">comsol.org.br</a>
+                            <h6 class="h6 mb-2 fw-normal"></h6>
+                    </div>
+                </div>
+                <footer class="">
+                    <p>&copy; ADS Students - Unicesumar Curitiba</p>
+                  </footer>
             </main>
         </div>
     </div>

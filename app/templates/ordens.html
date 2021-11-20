@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="h6">Total de ordens: {{ordens}}</h2>
+                <h6 class="h6">Total de ordens: {{countordens}}</h2>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -102,20 +102,15 @@
                         </thead>
                         <!-- Fazer função com for com todos os dados no PHP -->
                         <tbody>
+                            {% for ordem in ordens %}
                             <tr>
-                                <td>{{id}}</td>
-                                <td>{{nome}}</td>
-                                <td>{{qtde}}</td>
-                                <td>{{pesototal}}</td>
-                                <td>{{dataentrega}}</td>
+                                <td>{{ordem.id_ordem}}</td>
+                                <td>{{ordem.nome}}</td>
+                                <td>{{ordem.qtde}}</td>
+                                <td>{{ordem.pesototal}}</td>
+                                <td>{{ordem.dataentrega}}</td>
                             </tr>
-                            <tr>
-                                <td>{{id1}}</td>
-                                <td>{{nome1}}</td>
-                                <td>{{qtde1}}</td>
-                                <td>{{pesototal1}}</td>
-                                <td>{{dataentrega1}}</td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>

@@ -94,7 +94,9 @@
                     <select id="select" class="form-control" name="nome" placeholder="Nome do alimento"
                         required>
                         <option selected value id="">Selecione</option>
-                        <option value="{{nomeAlim}}">{{nomeAlim}}</option>
+                        {% for alimento in alimentos %}
+                        <option value="{{alimento.nome}}">{{alimento.nome}}</option>
+                        {% endfor %}
                         </option>
                     </select>
                     <h6 class="h6 mb-2 fw-normal"></h6>
@@ -114,7 +116,9 @@
                     <select id="categoria" class="form-select" name="categoria" placeholder="Categoria do alimento"
                         required>
                         <option selected value="">Selecione</option>
-                        <option value="{{nomeOng}}">{{nomeOng}}</option>
+                        {% for organizacao in organizacoes %}
+                        <option value="{{organizacao.nome}}">{{organizacao.nome}}</option>
+                        {% endfor %}
                         <option value="qualquer">Qualquer</option>
                     </select>
                     <h6 class="h6 mb-4 fw-normal"></h6>

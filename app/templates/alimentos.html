@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="h6">Total de alimentos: {{alimentos}}</h2>
+                <h6 class="h6">Total de alimentos: {{countalimentos}}</h2>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -104,23 +104,16 @@
                         </thead>
                         <!-- Fazer função com for com todos os dados no PHP -->
                         <tbody>
+                            {% for alimento in alimentos %}
                             <tr>
-                                <td>{{id}}</td>
-                                <td>{{nome}}</td>
-                                <td>{{categoria}}</td>
-                                <td>{{marca}}</td>
-                                <td>{{fabricacao}}</td>
-                                <td>{{validade}}</td>
-                                <td>{{peso}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{id1}}</td>
-                                <td>{{nome1}}</td>
-                                <td>{{categoria1}}</td>
-                                <td>{{marca1}}</td>
-                                <td>{{fabricacao1}}</td>
-                                <td>{{validade1}}</td>
-                                <td>{{peso1}}</td>
+                                <td>{{alimento.id_alimento}}</td>
+                                <td>{{alimento.nome}}</td>
+                                <td>{{alimento.categoria}}</td>
+                                <td>{{alimento.marca}}</td>
+                                <td>{{alimento.fabricacao}}</td>
+                                <td>{{alimento.validade}}</td>
+                                <td>{{alimento.peso}}</td>
+                                {% endfor %}
                             </tr>
                         </tbody>
                     </table>

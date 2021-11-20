@@ -16,12 +16,8 @@ $result = $statement->setFetchMode(PDO::FETCH_ASSOC);
 $resultadoConsulta2 = $statement->fetchAll();
 
 echo $twig->render('ordens.html', [
-    'ordens' => $resultadoConsulta2[0]['totalordens'],
-    'id' => $resultadoConsulta[0]['id_ordem'],
-    'nome' => $resultadoConsulta[0]['nome'],
-    'qtde' => $resultadoConsulta[0]['qtde'],
-    'pesototal' => $resultadoConsulta[0]['pesototal'],
-    'dataentrega' => $resultadoConsulta[0]['dataentrega']
+    'countordens' => $resultadoConsulta2[0]['totalordens'],
+    'ordens' => $resultadoConsulta
 ]);
 
 /*

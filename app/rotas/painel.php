@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 $cnpj = $_POST['cnpj'];
 $senha = hash('sha256', $_POST['password']);

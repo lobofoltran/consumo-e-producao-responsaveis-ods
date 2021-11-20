@@ -4,7 +4,7 @@ function validateMyForm () {
     if (campo1 == campo2) {
         return true;
     } else {
-        event.preventDefault();
+        preventDefault();
         return false;
     }
 }

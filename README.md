@@ -8,9 +8,10 @@
 - Uma forma efetiva de ajudar as pessoas é reduzir as perdas com os produtos vencidos. Segundo uma pesquisa, os supermercados brasileiros desperdiçaram, em 2017, o equivalente a R$ 3,9 bilhões em alimentos.
 - Imagine como esse valor poderia ser reinvestido nos negócios em forma de melhores salários, expansão, contratações, marketing etc. Ou ainda, ao invés de produzir toneladas de lixo, esse alimento poderia ser doado para pessoas carentes.
 
-#### Veja o vídeo mostrando toda a estrutura:
+Veja o vídeo mostrando toda a estrutura
+------------------
+[![Veja o Vídeo](https://i.imgur.com/TDsUo5e.png)](https:/youtu.be/v6mKKqZcRPQ)
 
-![Veja o Vídeo](https://i.imgur.com/TDsUo5e.pnghttps://www.youtu.be/v6mKKqZcRPQ)
+[Link para o Vídeo](https:/youtu.be/v6mKKqZcRPQ)
 
 Código completo: https://drive.google.com/drive/folders/1pO7DS39H7Z5-M5yXD2-YK2L0TP2upO2x?usp=sharing (composer não é possível exportar).
-
